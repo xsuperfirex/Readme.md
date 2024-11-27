@@ -20,15 +20,7 @@
 
 ## Переходим в папку /etc/systemd/system ##
 ## Создаем сервис myscript.service ##
-[Unit]
-Description=MyBashScript
-After=syslog.target
-[Service]
-ExecStart=/bin/bash '/home/admin1/myscript.sh'
-Type=forking
-[Install]
-WantedBy=multi-user.target
-Alias=bash.service
+
 
 # Обновите конфигурацию systemd: #
 
